@@ -1,0 +1,12 @@
+# Smoke-test checkpoint written by train_cylinder.py — never the real trained weights
+cylinder_riemann_demo.pth
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
