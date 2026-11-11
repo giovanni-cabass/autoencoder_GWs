@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run cylinder autoencoder smoke test
+        run: python autoencoder_training_example/train_cylinder.py
+      - name: Run gravitational-wave autoencoder demo
+        run: python autoencoder_use_example/demo_autoencoder_b_1_sb_0.py
