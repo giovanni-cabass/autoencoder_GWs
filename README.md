@@ -14,6 +14,8 @@ Zaldarriaga, Zhou).
 This repository's packaging (README, CI) was built with help from Claude Code. The autoencoder
 research behind the paper was built with help from Claude Code and Cursor.
 
+(Earlier commits were missing the git trailer so GitHub never recognized Claude Code as co-author.)
+
 ## What this does (plain language)
 
 A gravitational-wave search matches an incoming signal against a large bank of template
